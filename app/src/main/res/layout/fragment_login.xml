@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.login.LoginFragment">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/suitmedia_main_image" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="164dp"
+            android:src="@drawable/ic_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/username_field"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:background="@drawable/rounded_text"
+            android:paddingTop="4dp"
+            android:paddingStart="14dp"
+            android:maxLines="1"
+            android:hint="@string/name_hint"
+            android:fontFamily="@font/poppins_light"
+            />
+        <EditText
+            android:id="@+id/paliandrome_field"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_field"
+            android:background="@drawable/rounded_text"
+            android:hint="Paliandrom"
+            android:paddingStart="14dp"
+            android:paddingTop="4dp"
+            android:fontFamily="@font/poppins_light"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check_paliandrome"
+            android:layout_width="310dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/paliandrome_field"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#2B637B"
+            android:text="@string/check_button"
+            android:fontFamily="@font/poppins_semibold"
+            />
+        <Button
+            android:id="@+id/next_login"
+            android:layout_width="310dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_paliandrome"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#2B637B"
+            android:text="@string/next_from_login"
+            android:fontFamily="@font/poppins_semibold"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

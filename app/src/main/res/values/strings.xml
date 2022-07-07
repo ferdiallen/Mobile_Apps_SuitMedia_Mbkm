@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mobile Apps SuitMedia</string>
+    <string name="image_background">imagebackground</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_hint">Name</string>
+    <string name="check_button">CHECK</string>
+    <string name="next_from_login">Next</string>
+    <string name="back_button_desc">BackScreenButton</string>
+    <string name="third_screen_title">Third Screen</string>
+    <string name="content_desc_image_user">User Images</string>
+    <string name="field_name_empty">Field Name must not empty</string>
+    <string name="welcome">Welcome</string>
+    <string name="choose_user_btn">Choose a user</string>
+    <string name="username_selected">selected_user_name</string>
+    <string name="empty_state">Empty</string>
+</resources>
