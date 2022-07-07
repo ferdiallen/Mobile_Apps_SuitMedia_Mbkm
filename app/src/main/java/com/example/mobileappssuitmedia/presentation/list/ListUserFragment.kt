@@ -41,6 +41,7 @@ class ListUserFragment : Fragment() {
         }
         binding.apply {
             swipeContainer.setOnRefreshListener {
+                recycleAdapter.retry()
                 recycleAdapter.refresh()
             }
             backArrow.setOnClickListener {
