@@ -42,7 +42,6 @@ class ListUserFragment : Fragment() {
         binding.apply {
             swipeContainer.setOnRefreshListener {
                 recycleAdapter.refresh()
-                swipeContainer.isRefreshing = false
             }
             backArrow.setOnClickListener {
                 controller.popBackStack()
@@ -55,8 +54,10 @@ class ListUserFragment : Fragment() {
                     if (state.append.endOfPaginationReached) {
                         if (recycleAdapter.itemCount < 1) {
                             emptyState.visibility = View.VISIBLE
+                            swipeContainer.isRefreshing = false
                             return@addLoadStateListener
                         }
+                        swipeContainer.isRefreshing = false
                         emptyState.visibility = View.GONE
                     }
                 }
