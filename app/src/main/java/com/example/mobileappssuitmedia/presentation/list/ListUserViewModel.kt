@@ -26,13 +26,10 @@ class ListUserViewModel @Inject constructor(
     private val api: ApiService,
     private val db: LocalUserDatabase
 ) : ViewModel() {
-    init {
-
-    }
+   
     val pagerData: Flow<PagingData<LocalUserEntity>> =
         MediatorRepository(db, api).retrieveData().cachedIn(viewModelScope)
 
     private var _dataUser = MutableLiveData<PageData>()
     val dataUser: LiveData<PageData> = _dataUser
-}
 }
