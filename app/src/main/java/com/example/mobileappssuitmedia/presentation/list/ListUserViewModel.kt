@@ -34,10 +34,4 @@ class ListUserViewModel @Inject constructor(
 
     private var _dataUser = MutableLiveData<PageData>()
     val dataUser: LiveData<PageData> = _dataUser
-    /* private fun getData() = viewModelScope.launch {
-         viewModelScope.launch {
-             val res = api.getAllRequest()
-             _dataUser.postValue(res)
-         }
-     }*/
 }
