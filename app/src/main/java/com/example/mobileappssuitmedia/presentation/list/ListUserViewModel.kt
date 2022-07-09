@@ -35,3 +35,4 @@ class ListUserViewModel @Inject constructor(
     private var _dataUser = MutableLiveData<PageData>()
     val dataUser: LiveData<PageData> = _dataUser
 }
+}
